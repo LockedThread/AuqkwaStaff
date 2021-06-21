@@ -1,5 +1,6 @@
 plugins {
     java
+    idea
 }
 
 group = "com.auqkwa"
@@ -11,5 +12,7 @@ repositories {
 }
 
 dependencies {
+    module(":shared")
     compileOnly("io.github.waterfallmc:waterfall-api:1.16-R0.4-SNAPSHOT")
+    implementation("org.mongodb:mongodb-driver-legacy:4.2.3")
 }

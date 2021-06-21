@@ -1,0 +1,4 @@
+name: AuqkwaStaff
+main: com.auqkwa.staff.bungeecord.StaffPlugin
+version: 1.0.0
+authors: [ "Warren Snipes (LockedThread)" ]
