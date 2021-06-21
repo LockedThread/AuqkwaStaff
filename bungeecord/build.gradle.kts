@@ -7,13 +7,9 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    maven(url = uri("https://papermc.io/repo/repository/maven-public/"))
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
-}
-
-tasks.getByName<Test>("test") {
-    useJUnitPlatform()
+    compileOnly("io.github.waterfallmc:waterfall-api:1.16-R0.4-SNAPSHOT")
 }
