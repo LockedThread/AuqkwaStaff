@@ -47,12 +47,20 @@ public abstract class AbstractStaffUser {
         return this.displayName;
     }
 
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
+    }
+
     /**
      * @return the user's staff rank
      */
     @NotNull
     public final String getRank() {
         return this.rank;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
     }
 
     /**
@@ -62,11 +70,19 @@ public abstract class AbstractStaffUser {
         return this.lastLogin;
     }
 
+    public void setLastLogin(long lastLogin) {
+        this.lastLogin = lastLogin;
+    }
+
     /**
      * @return the database's play time in minutes
      */
     public long getDatabasePlayTime() {
         return this.databasePlayTime;
+    }
+
+    public void setDatabasePlayTime(long databasePlayTime) {
+        this.databasePlayTime = databasePlayTime;
     }
 
     /**
