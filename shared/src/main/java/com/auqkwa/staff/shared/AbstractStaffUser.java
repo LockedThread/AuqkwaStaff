@@ -9,6 +9,7 @@ public abstract class AbstractStaffUser {
     private final UUID uuid;
     private String displayName;
     private String rank;
+    private boolean fired;
     private long lastLogin;
     private long databasePlayTime;
 
@@ -66,6 +67,18 @@ public abstract class AbstractStaffUser {
      */
     public long getDatabasePlayTime() {
         return this.databasePlayTime;
+    }
+
+    /**
+     * @return whether or not the user is fired
+     */
+    public boolean isFired() {
+        return fired;
+    }
+
+    public void setFired(boolean fired) {
+        this.fired = fired;
+        //TODO: Add more business logic, possibly implement luckperms and discord hook
     }
 
     /**
