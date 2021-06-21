@@ -25,7 +25,7 @@ public abstract class AbstractStaffUser {
     }
 
     /**
-      * Method called when the user logs in
+     * Method called when the user logs in
      */
     public void login() {
     }
