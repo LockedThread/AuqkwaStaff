@@ -18,9 +18,15 @@ public abstract class AbstractStaffUser {
 
     public abstract boolean isOnline();
 
+    /**
+     * Method called when the user logs out
+     */
     public void logout() {
     }
 
+    /**
+      * Method called when the user logs in
+     */
     public void login() {
     }
 
